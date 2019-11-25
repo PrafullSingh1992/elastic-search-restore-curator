@@ -17,4 +17,3 @@ actions:
     - filtertype: state
       state: SUCCESS
       exclude:
-      
