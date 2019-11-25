@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Waiting ${INITIAL_DELAY:=60} seconds..."
+sleep "${INITIAL_DELAY}"
+
+/usr/bin/curator --config /etc/curator/restoreCofig.yml /etc/curator/restoreActions.yml
+
+echo "---------------exit restore curator---------------------"
